@@ -1404,8 +1404,8 @@
 	}
 
 	body {
-		background-color: #000;
-		background-image: url("../../images/bkg.jpg");
+		background-color: #3d3d3d;
+		/*background-image: url("../../images/bkg.jpg");*/
 		background-size: contain;
 		background-position: top center;
 	}
@@ -1471,7 +1471,7 @@
 		color: #ffffff;
 		font-weight: 200;
 		line-height: 1.5;
-		margin: 0 0 1em 0;
+		margin: 0 0 0.2em 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1509,6 +1509,7 @@
 
 	h2 {
 		font-size: 1.35em;
+		margin: 0 0 1em 0;
 	}
 
 		@media screen and (max-width: 736px) {
@@ -1916,12 +1917,17 @@
 			display: block;
 		}
 
+		.image.logo {
+			width: 200px;
+		}
+
 		.image.left, .image.right {
 			max-width: 20%;
 		}
 
 			.image.left img, .image.right img {
 				width: 100%;
+				opacity: 20%;
 			}
 
 		.image.left {
@@ -2580,17 +2586,23 @@
 
 	#header {
 		text-align: center;
-		padding: 6em 0 4em 0;
+		padding: 3em 0 1em 0;
 	}
 
 		#header h1 {
 			color: rgba(255, 255, 255, 0.65);
 		}
 
+		#header .logo img{
+			width: 10em;
+			display: inline-block;
+			margin: 0 0 0.2em 0;
+			padding: 0.5em;
+		}
+
 		#header .avatar {
 			border-radius: 100%;
 			display: inline-block;
-			margin: 0 0 2em 0;
 			padding: 0.5em;
 			border: solid 1px rgba(255, 255, 255, 0.25);
 			background-color: rgba(255, 255, 255, 0.075);
@@ -2602,6 +2614,7 @@
 				width: 10em;
 			}
 
+
 		@media screen and (max-width: 1280px) {
 
 			#header {
@@ -2609,6 +2622,7 @@
 			}
 
 		}
+
 
 /* Footer */
 
